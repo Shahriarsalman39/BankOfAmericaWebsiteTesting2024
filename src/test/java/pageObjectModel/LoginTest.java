@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
+	LoginPage lp;
 	
 	@BeforeMethod
 	public void openBankOfAmerica() {
@@ -16,13 +17,24 @@ public class LoginTest extends BaseTest {
 	@Test
 	public void validLoginTest() {
 		System.out.println("Hellojava");
-		LoginPage lp = new LoginPage(driver);
+		lp = new LoginPage(driver);
 		lp.getText();
 		lp.username("Shahrairsalman10");
 		lp.password("salman");
 		//lp.login();
 		lp.forgotpass();
 	}
+	
+	@Test
+	public void invalidLoginTest() {
+	    lp = new LoginPage(driver);
+		//lp.getText();
+		lp.username("Ahmedsalman@gamil.com");
+		lp.password("158@jhy_");
+		lp.login();
+		//lp.forgotpass();
+	}
+	
 	
 	
 	@AfterMethod
