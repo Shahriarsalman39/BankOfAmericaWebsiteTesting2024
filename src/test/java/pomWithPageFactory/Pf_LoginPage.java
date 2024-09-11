@@ -29,13 +29,22 @@ public class Pf_LoginPage {
 		return uName;
 		
 	}
-	
+	public WebElement username2(String EnterUserName ) {
+		uName.sendKeys(EnterUserName);
+		return uName;
+		
+	}
 	public WebElement password1(String passWord1) {
 		pasS.sendKeys(passWord1);
 		return pasS;
 		
 	}
 	
+	public WebElement password2(String passWord1) {
+		pasS.sendKeys(passWord1);
+		return pasS;
+		
+	}
 	public void lButton1() {
 		Log_in.click();
 		

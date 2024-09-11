@@ -17,8 +17,10 @@ public class Pf_LoginTest extends Pf_baseTest{
 	@Test
 	public void loginTest() {
 	    pfpl = new Pf_LoginPage(driver);
-		pfpl.username1("salman19");
-		pfpl.password1("jk5");
+		//pfpl.username1("salman19");
+		pfpl.username2("FaruqMulla5");
+		//pfpl.password1("jk5");
+		pfpl.password2("2578ui");
 		pfpl.lButton1();
 	}
 	

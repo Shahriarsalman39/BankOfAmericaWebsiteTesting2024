@@ -25,8 +25,8 @@ public class Xpath extends BaseTest {
 		driver.findElement(By.xpath("//input[starts-with(@class,'tl-pri')]")).sendKeys("jkYo8@");
 		// driver.findElement(By.xpath("//input[@id='passcode1']")).sendKeys("jkYo8@");
 
-		driver.findElement(By.xpath("//button[contains(@class,'spa-circle-btn-wr')]")).click();
-		// driver.findElement(By.xpath("//*[text()='Log In']")).click();
+		//driver.findElement(By.xpath("//button[contains(@class,'spa-circle-btn-wr')]")).click();
+		 driver.findElement(By.xpath("//*[text()='Log In']")).click();
 		// driver.findElement(By.xpath("//button[@id='signIn']")).click();
 	}
 

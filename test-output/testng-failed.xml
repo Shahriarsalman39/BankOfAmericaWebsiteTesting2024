@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pomWithPageFactory.Pf_LoginTest">
+      <class name="syncronization.ExplicitWaitTest">
         <methods>
-          <include name="openApp"/>
-          <include name="loginTest"/>
+          <include name="Logintest"/>
+          <include name="openaPP"/>
+          <include name="closeaPP"/>
         </methods>
-      </class> <!-- pomWithPageFactory.Pf_LoginTest -->
+      </class> <!-- syncronization.ExplicitWaitTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
