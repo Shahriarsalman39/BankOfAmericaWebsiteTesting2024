@@ -1,4 +1,4 @@
-package pomWithPageFactory;
+package keyWordFrameWork;
 
 import java.time.Duration;
 
@@ -7,18 +7,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import keyWordFrameWork.Test_Reader;
-
-public class Pf_baseTest {
+public class Base_Test {
 
 	public WebDriver driver;
 
-	//String Browser = "Chrome";
-	Test_Reader tr;
+	String Browser = "Chrome";
+
 	public void openApplication() {
-		tr=new Test_Reader();
-		String Browser=tr.readBrowser();
-		
 		if (Browser.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
 
@@ -41,8 +36,7 @@ public class Pf_baseTest {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		String QaeUrl=tr.readurl();
-		driver.get(QaeUrl);
+		driver.get("https://www.bankofamerica.com/");
 
 	}
 
